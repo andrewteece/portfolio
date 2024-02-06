@@ -470,3 +470,34 @@ h1 > span {
   bottom: 145px;
   translate: -50%;
 }
+
+/* FOOTER */
+
+footer {
+  padding-block: 2.5rem 3.75rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem 1.5625rem;
+}
+
+.footer__home {
+  font-size: var(--fs-23-28);
+  line-height: 1;
+  color: var(--clr-neutral-light-100);
+  margin-top: 0.3em;
+  flex: 1 0 100%;
+}
+
+.footer__social {
+  transition: fill var(--transition);
+}
+
+.footer__social:hover > svg > path,
+.footer__social:focus > svg > path {
+  fill: var(--clr-accent-400);
+}
