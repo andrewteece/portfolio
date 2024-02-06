@@ -12,9 +12,9 @@
       <div class="wrapper">
         <nav class="primary__nav">
           <h2 class="visually-hidden">Navigation</h2>
-          <a href="/" class="header--home">
+          <a href="/" class="header__home">
             andrewteece
-            <span class="visually-hiddent">to home page</span>
+            <span class="visually-hidden">to home page</span>
           </a>
           <a href="#" class="primary__header--social">
             <svg
@@ -66,5 +66,51 @@
         </nav>
       </div>
     </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrapper hero__wrapper">
+          <div>
+            <picture>
+              <source
+                media="(min-width: 62.5em)"
+                srcset="/assets/images/image-profile-desktop.webp"
+              />
+              <source
+                media="(min-width: 37.5em)"
+                srcset="/assets/images/image-profile-tablet.webp"
+              />
+              <img
+                src="/assets/images/image-profile-mobile.webp"
+                class="hero__image"
+                alt="picture of andrew teece"
+              />
+            </picture>
+            <img
+              src="/assets/images/pattern-rings.svg"
+              class="hero--rings"
+              alt=""
+            />
+            <img
+              src="/assets/images/pattern-circle.svg"
+              class="hero--circle"
+              alt=""
+            />
+            <div class="hero__text">
+              <h1 class="hero__title">
+                Nice to<br />
+                meet you! I'm, <span>Andrew</span>
+              </h1>
+              <p class="hero__description">
+                Based in Wisconsin, I am a front-end developer, photographer,
+                and IT consultant.
+              </p>
+              <a href="#contact" class="hero__contact underline">Contact me</a>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
