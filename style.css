@@ -59,7 +59,7 @@
 /*html {
   color-scheme: dark light;
   hanging-punctuation: first last;
-}*/
+} */
 
 body {
   min-height: 100svh;
@@ -141,6 +141,10 @@ a.underline {
   background-position: 0 2.1em;
   background-repeat: repeat-x;
   background-size: 8px 0.25rem;
+}
+
+.border--bottom {
+  border-bottom: 2px solid var(--clr-neutral-light-300);
 }
 
 /* HEADER & NAV */
@@ -242,11 +246,49 @@ h1 > span {
   color: var(--clr-neutral-light-100);
   text-transform: uppercase;
   letter-spacing: 2.3px;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 
 .hero__contact:hover,
 .hero__contact:focus {
   color: var(--clr-accent-400);
   transition: all var(--transition);
+}
+
+/* SKILLS */
+
+.skills {
+  position: relative;
+}
+
+.skills__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-block: 0.5em;
+}
+
+.skills__item {
+  text-align: center;
+}
+
+.skills__title {
+  font-size: var(--fs-27-35);
+  line-height: 1.2;
+  margin-block-end: 2px;
+}
+
+.skills__description {
+  margin-block-end: 0;
+}
+
+.skills__description:last-child {
+  margin-bottom: 2rem;
+}
+
+.skills--rings {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: 0 50%;
 }
