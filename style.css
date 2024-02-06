@@ -129,7 +129,8 @@ h3 {
 
 /* UTILITY */
 
-a.underline {
+a.underline,
+button.underline {
   display: inline-block;
   padding-bottom: 0.625rem;
   line-height: 1.6;
@@ -159,6 +160,10 @@ a.underline {
 
 .border--bottom {
   border-bottom: 2px solid var(--clr-neutral-light-300);
+}
+
+.bg--light {
+  background: var(--clr-neutral-dark-400);
 }
 
 /* HEADER & NAV */
@@ -315,7 +320,6 @@ h1 > span {
 
 .projects__picture {
   margin-block-end: 1.25rem;
-  padding-left: 1.5em;
 }
 
 .projects__item {
@@ -363,4 +367,100 @@ h1 > span {
 .projects__links a:focus {
   color: var(--clr-accent-400);
   transition: all var(--transition);
+}
+
+/* CONTACT */
+
+.contact {
+  position: relative;
+}
+
+.contact__wrapper {
+  padding-block: 5rem;
+}
+
+.contact__text {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.contact__title {
+  font-size: var(--fs-39-54);
+}
+
+.contact__control {
+  position: relative;
+  margin-block-end: 1.25rem;
+}
+
+.contact__control input,
+.contact__control textarea {
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border: none;
+  border-bottom: 2px solid var(--clr-neutral-light-100);
+  background: transparent;
+  font-size: var(--fs-16-18);
+  line-height: 1.6;
+  color: var(--clr-neutral-light-100);
+}
+
+.contact__control > *::placeholder {
+  color: var(--clr-neutral-light-100);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.contact__control textarea {
+  margin-block-end: 2rem;
+}
+
+.contact__control.align--right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__control button {
+  background-color: transparent;
+  border: none;
+}
+
+.contact__btn {
+  color: var(--clr-neutral-light-100);
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  cursor: pointer;
+}
+
+.contact__btn:hover,
+.contact__btn:focus {
+  color: var(--clr-accent-400);
+  transition: var(--transition);
+}
+
+.contact__invalid {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: -50% -50%;
+}
+
+.contact input:focus-visible:invalid ~ .contact__invalid,
+.contact textarea:focus-visible:invalid ~ .contact__invalid {
+  display: inline-block;
+}
+
+.contact textarea:focus-visible:invalid ~ .contact__invalid {
+  top: 1.2rem;
+  right: 1.5rem;
+  translate: none;
+}
+
+.contact--rings {
+  position: absolute;
+  left: 0;
+  bottom: 145px;
+  translate: -50%;
 }
