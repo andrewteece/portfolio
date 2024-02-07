@@ -82,8 +82,8 @@
     <!-- Hero -->
     <main id="main">
       <section class="hero">
-        <div class="wrapper hero__wrapper">
-          <div>
+        <div class="wrapper hero__wrapper border--bottom">
+          <div class="hero__content">
             <picture>
               <source
                 media="(min-width: 62.5em)"
@@ -112,7 +112,7 @@
             <div class="hero__text">
               <h1 class="hero__title">
                 Nice to<br />
-                meet you! I'm, <span>Andrew</span>
+                meet you! I'm, <span>Andrew.</span>
               </h1>
               <p class="hero__description">
                 Based in Wisconsin, I am a front-end developer, photographer,
@@ -120,13 +120,12 @@
               </p>
               <a href="#contact" class="contact--me underline">Contact me</a>
             </div>
-            <div class="border--bottom"></div>
           </div>
         </div>
       </section>
       <!-- Skills -->
       <section class="skills">
-        <div class="wrapper skills__wrapper">
+        <div class="wrapper skills__wrapper border--bottom">
           <h2 class="visually-hidden">Skills</h2>
           <div class="skills__item">
             <h3 class="skills__title">HTML</h3>
@@ -152,7 +151,6 @@
             <h3 class="skills__title">Business Administration</h3>
             <p class="skills__description">20 years experience</p>
           </div>
-          <div class="border--bottom"></div>
         </div>
         <img
           src="/assets/images/pattern-rings.svg"
@@ -348,7 +346,7 @@
       </section>
       <!-- Contact -->
       <section id="contact" class="contact bg--light">
-        <div class="wrapper contact__wrapper border--bottom">
+        <div class="wrapper contact__wrapper">
           <div class="contact__text">
             <h2 class="contact__title">Contact</h2>
             <p class="contact__description">
@@ -357,6 +355,7 @@
               possible.
             </p>
           </div>
+
           <form action="" class="contact__form">
             <div class="contact__control">
               <label for="name" class="visually-hidden">Name</label>
@@ -422,11 +421,12 @@
           class="contact--rings"
           alt=""
         />
+        <hr />
       </section>
     </main>
     <footer class="footer bg--light">
       <h2 class="visually-hidden">Footer</h2>
-      <div class="wrapper">
+      <div class="wrapper footer__wrapper">
         <nav class="footer__nav">
           <h2 class="visually-hidden">Navigation</h2>
           <a href="/" class="footer__home">
@@ -495,5 +495,6 @@
         </nav>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
