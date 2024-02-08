@@ -138,6 +138,10 @@ h3 {
   overflow: hidden;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .wrapper {
   max-width: 69.375rem;
   width: calc(100% - 2rem);
@@ -509,7 +513,7 @@ h1 > span {
   }
 
   .skills--rings {
-    translate: -40% 50%;
+    translate: -40% 20%;
     left: 100%;
   }
 }
@@ -729,6 +733,18 @@ h1 > span {
   font-size: var(--fs-16-18);
   line-height: 1.6;
   color: var(--clr-neutral-light-100);
+}
+
+.contact__form--label {
+  color: var(--clr-accent-600);
+  font-style: oblique;
+  font-weight: var(--fw-bold);
+  width: 50%;
+  text-align: center;
+}
+
+.contact--alert {
+  border: 2px solid var(--clr-accent-600);
 }
 
 .contact__control > *::placeholder {
