@@ -185,12 +185,6 @@ button.underline {
   border-bottom: 2px solid var(--clr-neutral-light-300);
 }
 
-hr {
-  color: var(--clr-neutral-light-300);
-  width: 90%;
-  margin: 0 auto;
-}
-
 .bg--light {
   background: var(--clr-neutral-dark-400);
 }
@@ -446,6 +440,7 @@ h1 > span {
 
 .skills {
   position: relative;
+  margin-top: 2em;
 }
 
 .skills__wrapper {
@@ -461,8 +456,9 @@ h1 > span {
 
 .skills__title {
   font-size: var(--fs-27-35);
+  font-weight: var(--fw-bold);
   line-height: 1.2;
-  margin-block-end: 2px;
+  margin-block-end: 0.5em;
 }
 
 .skills__description {
@@ -607,6 +603,7 @@ h1 > span {
 
   .projects__title {
     font-size: var(--fs-47-68);
+    font-weight: var(--fw-bold);
   }
 
   .contact--me {
@@ -708,6 +705,7 @@ h1 > span {
 
 .contact__title {
   font-size: var(--fs-39-54);
+  font-weight: var(--fw-bold);
 }
 
 .contact__description {
@@ -803,6 +801,10 @@ h1 > span {
     bottom: 3rem;
     translate: -75%;
   }
+
+  .contact .border--bottom {
+    width: 90%;
+  }
 }
 
 @media (min-width: 62.5em) {
@@ -842,6 +844,7 @@ footer {
 
 .footer__home {
   font-size: var(--fs-23-28);
+  font-weight: var(--fw-bold);
   line-height: 1;
   color: var(--clr-light);
   margin-top: 0.3em;
@@ -872,7 +875,6 @@ footer {
   .footer__home {
     flex: 0 0 0%;
     margin-right: auto;
-    font-weight: var(--fw-bold);
   }
 }
 
