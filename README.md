@@ -14,7 +14,6 @@ This is a solution to the [Single-page developer portfolio challenge on Frontend
     - [Built with](#built-with)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,13 +30,11 @@ Users should be able to:
 ### Screenshot
 
 ![](./assets/images/screenshot-lg.png)
-![](./assets/images/screenshot-md.png)
-![](./assets/images/screenshot-sm.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/andrewteece/portfolio)
-- Live Site URL: [Add live site URL here](https://superlative-vacherin-3e5f77.netlify.app/)
+- Solution URL: [https://github.com/andrewteece/portfolio](https://github.com/andrewteece/portfolio)
+- Live Site URL: [https://superlative-vacherin-3e5f77.netlify.app/](https://superlative-vacherin-3e5f77.netlify.app/)
 
 ## My process
 
@@ -51,6 +48,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/andrewteece)
+- Frontend Mentor - [@andrewteece](https://www.frontendmentor.io/profile/andrewteece)
 
 
